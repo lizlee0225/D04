@@ -16,18 +16,23 @@
 # it accepts the string and the letter as arguments.
 
 ###############################################################################
-# Imports
 
 
-# Body
-
+def count(s, l):
+	count = 0
+	for letter in s:
+		if letter == l:
+			count += 1
+	print(count)
 
 ###############################################################################
 def main():
 
     # Remove print("Hello World!") and add several functions calls to count()
     # below, passing various strings and letters
-    print("Hello World!")
+    count('Hello World!', 'o')
+    count('Liz Lee', 's')
+    count('Ahhhhh', 'h')
 
 
 if __name__ == '__main__':

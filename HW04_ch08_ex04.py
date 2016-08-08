@@ -14,7 +14,7 @@
 
 
 def any_lowercase1(s):
-    """Explain what is wrong, if anything, here.
+    """Returns true only if the first letter in the string is lowercase.
     """
     for c in s:
         if c.islower():
@@ -24,7 +24,7 @@ def any_lowercase1(s):
 
 
 def any_lowercase2(s):
-    """Explain what is wrong, if anything, here.
+    """Always return true because it only checks if the letter 'c' is lowercase, which it is.
     """
     for c in s:
         if 'c'.islower():
@@ -34,7 +34,7 @@ def any_lowercase2(s):
 
 
 def any_lowercase3(s):
-    """Explain what is wrong, if anything, here.
+    """Returns false if the last letter of the string is uppercase.
     """
     for c in s:
         flag = c.islower()
@@ -42,7 +42,7 @@ def any_lowercase3(s):
 
 
 def any_lowercase4(s):
-    """Explain what is wrong, if anything, here.
+    """Nothing is wrong.
     """
     flag = False
     for c in s:
@@ -51,7 +51,7 @@ def any_lowercase4(s):
 
 
 def any_lowercase5(s):
-    """Explain what is wrong, if anything, here.
+    """Returns False whenever there is an uppercase letter in the string.
     """
     for c in s:
         if not c.islower():
@@ -66,8 +66,10 @@ def main():
     # call that function with a string for which the function returns
     # incorrectly.
     # ex.: any_lowercase_("thisstringmessesupthefunction")
-    print("Hello World!")
-
+    print(any_lowercase1('Hello'))
+    print(any_lowercase2('HELLO'))
+    print(any_lowercase3('pythoN'))
+    print(any_lowercase5('hEllo'))
 
 if __name__ == '__main__':
     main()

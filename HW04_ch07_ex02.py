@@ -20,16 +20,26 @@
 # the last expression it evaluated.
 
 ###############################################################################
-# Imports
+import math
+
+def eval_loop():
+	user_input = ''
+	while user_input != 'done':
+		user_input = input('What would you like to calculate? ')
+		if user_input == 'done':
+			break
+		user_answer = eval(user_input)
+		print(user_answer)
+	return user_answer
 
 
-# Body
+
 
 
 ###############################################################################
 def main():
-    pass  # Remove this line and uncomment below once eval_loop is defined.
-    # eval_loop()
+
+	eval_loop()
 
 if __name__ == '__main__':
-    main()
+	main()
